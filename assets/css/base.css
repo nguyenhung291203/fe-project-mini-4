@@ -1,0 +1,89 @@
+:root {
+  --color-pink:#ff589e;
+  --color-white:#fff;
+  --color-black:#1e1e1e;
+  --color-purple:#8060EB;
+  --color-text:#777777;
+  --color-gray:#F2F2FE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+::selection {
+  background: #ff589e;
+  color: #fff;
+}
+
+/* button */
+.button {
+  text-decoration: none !important;
+  width: fit-content;
+  color: var(--color-white);
+  padding: 12px 20px;
+  font-size: 13px;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+.button:hover {
+  cursor: pointer;
+  color: var(--color-white);
+}
+.button-pink {
+  background: var(--color-pink);
+}
+.button-pink:hover {
+  background: var(--color-purple);
+}
+.button-purple {
+  background: var(--color-purple);
+}
+.button-purple:hover {
+  background: var(--color-pink);
+}
+
+@media (max-width: 575.98px) {
+  .button {
+    font-size: 10px;
+  }
+}
+/* end button */
+/* icon-circle */
+.icon-circle {
+  background: url(../images/circle-dec.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 32px;
+}
+
+.icon-circle-up {
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 39%;
+  left: 66.6666666667%;
+}
+
+.icon-circle-down {
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 45%;
+  left: 66.6666666667%;
+}
+
+@media (max-width: 991.98px) {
+  .icon-circle {
+    display: none !important;
+  }
+}
+/* end icon-circle */
+
+/*# sourceMappingURL=base.css.map */
